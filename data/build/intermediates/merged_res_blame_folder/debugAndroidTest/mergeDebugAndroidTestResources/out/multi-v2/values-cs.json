@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.siphokazi.pokedex.data.test.data-mergeDebugAndroidTestResources-1:/values-cs/values-cs.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\SiphokaziMatsheke\\.gradle\\caches\\8.11.1\\transforms\\7ac491d55a5efd9e03c95dcf4496a63e\\transformed\\core-1.8.0\\res\\values-cs\\values-cs.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}

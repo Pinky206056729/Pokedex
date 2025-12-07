@@ -1,0 +1,14 @@
+com.siphokazi.pokedex.data.test.data-androidTest-0 C:\Kotlin\Pokedex\data\build\generated\res\resValues\androidTest\debug
+com.siphokazi.pokedex.data.test.data-mergeDebugAndroidTestResources-1 C:\Kotlin\Pokedex\data\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.siphokazi.pokedex.data.test.data-mergeDebugAndroidTestResources-2 C:\Kotlin\Pokedex\data\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.siphokazi.pokedex.data.test.data-debugAndroidTest-3 C:\Kotlin\Pokedex\data\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources
+com.siphokazi.pokedex.data.test.data-debug-4 C:\Kotlin\Pokedex\data\build\intermediates\packaged_res\debug\packageDebugResources
+com.siphokazi.pokedex.data.test.data-fragment-1.5.1-5 C:\Users\SiphokaziMatsheke\.gradle\caches\8.11.1\transforms\158393da0ecd21a52b5a60c26cb4eb58\transformed\fragment-1.5.1\res
+com.siphokazi.pokedex.data.test.data-lifecycle-viewmodel-savedstate-2.5.1-6 C:\Users\SiphokaziMatsheke\.gradle\caches\8.11.1\transforms\355c1ddc6f257c69ee9837c38ab2f5a1\transformed\lifecycle-viewmodel-savedstate-2.5.1\res
+com.siphokazi.pokedex.data.test.data-lifecycle-runtime-2.5.1-7 C:\Users\SiphokaziMatsheke\.gradle\caches\8.11.1\transforms\37ecd6262388bddb3e23e38cea479921\transformed\lifecycle-runtime-2.5.1\res
+com.siphokazi.pokedex.data.test.data-annotation-experimental-1.3.1-8 C:\Users\SiphokaziMatsheke\.gradle\caches\8.11.1\transforms\382576f50c826e6fc1074c8e19bd8028\transformed\annotation-experimental-1.3.1\res
+com.siphokazi.pokedex.data.test.data-activity-1.5.1-9 C:\Users\SiphokaziMatsheke\.gradle\caches\8.11.1\transforms\3c825c16eb434a8b296bcf253577ddb4\transformed\activity-1.5.1\res
+com.siphokazi.pokedex.data.test.data-core-1.8.0-10 C:\Users\SiphokaziMatsheke\.gradle\caches\8.11.1\transforms\7ac491d55a5efd9e03c95dcf4496a63e\transformed\core-1.8.0\res
+com.siphokazi.pokedex.data.test.data-lifecycle-livedata-core-2.5.1-11 C:\Users\SiphokaziMatsheke\.gradle\caches\8.11.1\transforms\b3148f20fe9cae10da5fe4f600a8e835\transformed\lifecycle-livedata-core-2.5.1\res
+com.siphokazi.pokedex.data.test.data-lifecycle-viewmodel-2.5.1-12 C:\Users\SiphokaziMatsheke\.gradle\caches\8.11.1\transforms\d0c73063c8fa3923673e00dc87a9a628\transformed\lifecycle-viewmodel-2.5.1\res
+com.siphokazi.pokedex.data.test.data-savedstate-1.2.0-13 C:\Users\SiphokaziMatsheke\.gradle\caches\8.11.1\transforms\d21f454b122fd479fc2a3958c0c55e22\transformed\savedstate-1.2.0\res
