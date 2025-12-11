@@ -48,7 +48,7 @@ import coil.compose.AsyncImage
 import com.siphokazi.pokedex.domain.model.PokemonListItem
 import com.siphokazi.pokedex.presentation.viewmodel.HomeViewModel
 
-// HOME SCREEN COMPOSABLE ---
+// HOME SCREEN COMPOSABLE
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun HomeScreen(viewModel: HomeViewModel = hiltViewModel(), onPokemonClick: (Int) -> Unit) {
@@ -60,7 +60,7 @@ fun HomeScreen(viewModel: HomeViewModel = hiltViewModel(), onPokemonClick: (Int)
             TopAppBar(
                 title = {
                     Text(
-                        "PokéDex Lite",
+                        "PokéDex",
                         color = MaterialTheme.colorScheme.onPrimaryContainer,
                         style = MaterialTheme.typography.headlineSmall.copy(fontWeight = FontWeight.Bold) // Bold and slightly larger text
                     )
