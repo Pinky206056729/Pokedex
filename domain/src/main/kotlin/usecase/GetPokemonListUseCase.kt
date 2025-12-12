@@ -2,7 +2,7 @@ package com.siphokazi.pokedex.domain.usecase
 
 import com.siphokazi.pokedex.domain.model.PokemonListItem
 import com.siphokazi.pokedex.domain.repository.PokemonRepository
-import com.siphokazi.pokedex.domain.common.Result
+import common.Result
 import javax.inject.Inject
 
 class GetPokemonListUseCase @Inject constructor(

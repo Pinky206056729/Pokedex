@@ -1,4 +1,4 @@
-package com.siphokazi.pokedex.domain.common
+package common
 
 /**
  * A custom sealed class representing the outcome of an operation.

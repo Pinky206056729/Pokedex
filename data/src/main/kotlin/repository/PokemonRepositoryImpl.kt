@@ -5,11 +5,11 @@ import com.siphokazi.pokedex.domain.model.PokemonListItem
 import com.siphokazi.pokedex.domain.repository.PokemonRepository
 import remote.response.PokemonListResponse
 import java.util.Locale
-import com.siphokazi.pokedex.domain.common.Result
+import common.Result
 import com.siphokazi.pokedex.domain.model.PokemonDetail
-import com.siphokazi.pokedex.domain.model.PokemonStat
 import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
+import mapper.toDomainModel
 import remote.response.PokemonDetailResponse
 import javax.inject.Inject
 
@@ -23,6 +23,7 @@ class PokemonRepositoryImpl @Inject constructor(
             val response: PokemonListResponse = apiService.getPokemonList(limit)
 
             // Use coroutineScope to execute all type lookups in parallel
+            //start a background task to fetch that Pokémon’s primary type ("Fire", "Water", "Grass").
             val listItemsWithDeferredType = coroutineScope {
 
                 response.results.map { listItemDto ->
@@ -91,53 +92,4 @@ class PokemonRepositoryImpl @Inject constructor(
             "Unknown" // Return a safe default on failure
         }
     }
-}
-
-/**
- * Extension function to convert the API's detailed response (DTO)
- * into the clean Domain Model (PokemonDetail).
- */
-
-fun PokemonDetailResponse.toDomainModel(): PokemonDetail {
-    // API provides height in decimetres (dm) and weight in hectograms (hg).
-    // Domain model requires standard SI units (meters, kilograms).
-
-    //Conversion: 1 dm = 0.1 m. Height / 10.0
-    val heightMeters = this.height / 10.0f
-
-    // Conversion: 1 hg = 0.1 kg. Weight / 10.0
-    val weightKg = this.weight / 10.0f
-
-    // Use the official front sprite URL, with a fallback if null
-    val spriteUrl = this.sprites.front_default
-        ?: "https://defaultimage.png" // Fallback image if null
-
-    val mappedStats = this.stats.map { statDto ->
-        PokemonStat(
-            name = statDto.stat.name
-                .replace("-", " ")
-                .replaceFirstChar { char -> char.uppercaseChar().toString() },
-            value = statDto.base_stat
-        )
-    }
-
-    val mappedTypes = this.types.map { typeWrapper ->
-        typeWrapper.type.name.replaceFirstChar { char -> char.uppercaseChar().toString() }
-    }
-
-    val mappedAbilities = this.abilities.map { abilityWrapper ->
-        abilityWrapper.ability.name.replaceFirstChar { char -> char.uppercaseChar().toString() }
-    }
-
-    return PokemonDetail(
-        id = this.id,
-        // Capitalize name
-        name = this.name.replaceFirstChar { char -> char.uppercase(Locale.ROOT) },
-        heightInMeters = heightMeters,
-        weightInKg = weightKg,
-        frontSpriteUrl = spriteUrl,
-        stats = mappedStats,
-        types = mappedTypes,
-        abilities = mappedAbilities
-    )
 }
