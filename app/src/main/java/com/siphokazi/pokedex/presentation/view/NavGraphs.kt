@@ -24,7 +24,7 @@ fun AppNavigation() {
             )
         }
 
-        //DETAIL SCREEN (Your Code Snippet)
+        //DETAIL SCREEN
         composable(
             "pokemon_detail_screen/{pokemonId}",
             arguments = listOf(navArgument("pokemonId") { type = NavType.IntType })
